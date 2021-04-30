@@ -71,16 +71,16 @@ class UnivTitle extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
-                width: size.width * 0.03,
-              ),
-              Text(
-                this.univName,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w400,
-                  fontSize: size.width * 0.037,
+              Padding(
+                padding: EdgeInsets.all(size.width * 0.05),
+                child: Text(
+                  this.univName,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w400,
+                    fontSize: size.width * 0.03,
+                  ),
                 ),
               )
             ],

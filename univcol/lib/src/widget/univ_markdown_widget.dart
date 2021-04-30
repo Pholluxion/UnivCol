@@ -18,17 +18,14 @@ class MarkdownTextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
+
     return Stack(
       children: [
         Container(
           width: double.infinity,
-          height: this.tam.height * 0.8,
+          height: size.height * 0.75,
           decoration: BoxDecoration(
-            // color: Colors.amber,
-            // boxShadow: [
-            //   BoxShadow(
-            //   ),
-            // ],
             borderRadius: BorderRadius.circular(this.tam.width * 0.05),
           ),
           child: Markdown(
@@ -43,7 +40,7 @@ class MarkdownTextWidget extends StatelessWidget {
               h3Align: WrapAlignment.center,
               unorderedListAlign: WrapAlignment.spaceBetween,
               textAlign: WrapAlignment.spaceBetween,
-              textScaleFactor: 0.7,
+              textScaleFactor: size.width * 0.002,
             ),
             controller: this.controller,
             selectable: true,

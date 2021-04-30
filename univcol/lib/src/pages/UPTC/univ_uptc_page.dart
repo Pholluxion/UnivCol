@@ -77,35 +77,11 @@ class UnivUptcPage extends StatelessWidget {
                     primaryColor: Colors.yellow[700],
                   ),
                 ),
-                Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(
-                        left: tam.width * 0.02,
-                        right: tam.width * 0.02,
-                      ),
-                      child: MarkdownTextWidget(
-                        color: Colors.lightGreen,
-                        tam: tam * 0.45,
-                        controller: _controller,
-                        markdown: markdownSrc,
-                      ),
-                    ),
-                  ],
-                ),
-                Container(
-                  child: Padding(
-                    padding: EdgeInsets.only(
-                      left: tam.width * 0.1,
-                      right: tam.width * 0.1,
-                      bottom: tam.height * 0.01,
-                    ),
-                    child: SvgPicture.asset(
-                      'assets/eUPTC.svg',
-                      width: tam.width * 0.9,
-                    ),
-                  ),
+                MarkdownTextWidget(
+                  color: Colors.lightGreen,
+                  tam: tam,
+                  controller: _controller,
+                  markdown: markdownSrc,
                 ),
                 Column(
                   children: [
@@ -113,7 +89,6 @@ class UnivUptcPage extends StatelessWidget {
                       padding: EdgeInsets.only(
                         left: tam.width * 0.05,
                         right: tam.width * 0.05,
-                        top: tam.height * 0.15,
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,

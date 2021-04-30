@@ -4,7 +4,6 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_xlider/flutter_xlider.dart';
 
 import 'package:univcol/src/pages/UPTC/bloc/pageBloc/uptcpagesbloc_bloc.dart';
-import 'package:univcol/src/pages/UPTC/pagesUptc/pagesUptc.dart';
 import 'package:univcol/src/widget/widgetdGen.dart';
 
 double _cN = 50;

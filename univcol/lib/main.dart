@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'UnivColApp',
-      home: UptcPage(),
+      home: UisPage(),
       theme: ThemeData(
         primaryColor: Colors.grey,
         accentColor: Colors.blueGrey,

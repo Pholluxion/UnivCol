@@ -63,10 +63,6 @@ class UnivUisPage extends StatelessWidget {
         width: double.infinity,
         child: Stack(
           children: [
-            // BackGround(
-            //   seconaryColor: Colors.lightGreenAccent,
-            //   primaryColor: Colors.lightGreen[800],
-            // ),
             ListView(
               children: [
                 Padding(
@@ -97,19 +93,6 @@ class UnivUisPage extends StatelessWidget {
                       ),
                     ),
                   ],
-                ),
-                Container(
-                  child: Padding(
-                    padding: EdgeInsets.only(
-                      left: tam.width * 0.1,
-                      right: tam.width * 0.1,
-                      bottom: tam.height * 0.05,
-                    ),
-                    child: SvgPicture.asset(
-                      'assets/eUIS.svg',
-                      width: tam.height * 0.4,
-                    ),
-                  ),
                 ),
                 Column(
                   children: [
